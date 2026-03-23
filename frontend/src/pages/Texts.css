@@ -1,0 +1,38 @@
+.texts-header { margin-bottom: var(--space-xl); }
+.texts-header h2 { margin-bottom: 6px; }
+.texts-header p { color: var(--text-muted); }
+
+.texts-filters { display: flex; flex-direction: column; gap: var(--space-md); margin-bottom: var(--space-xl); }
+.search-wrap { position: relative; }
+.search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--text-muted); }
+.search-input { padding-left: 40px; }
+.category-tabs { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.cat-tab {
+  padding: 5px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 500;
+  background: var(--bg-glass2); border: 1px solid var(--border);
+  color: var(--text-muted); cursor: pointer; transition: all 0.2s;
+  font-family: var(--font-body);
+}
+.cat-tab:hover { color: var(--primary); border-color: var(--border-bright); }
+.cat-tab.active { background: rgba(245,166,35,0.12); border-color: var(--primary); color: var(--primary); }
+
+.texts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: var(--space-lg); }
+
+.text-card { cursor: pointer; transition: all 0.25s; }
+.text-card:hover { border-color: var(--border-bright); transform: translateY(-3px); box-shadow: var(--shadow-glow); }
+.text-card.expanded { border-color: var(--primary); }
+.text-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-sm); }
+.text-era { font-size: 0.75rem; color: var(--text-muted); }
+.text-title { font-size: 1rem; font-weight: 700; margin-bottom: 2px; }
+.text-original { font-family: var(--font-serif); color: var(--primary); font-size: 0.9rem; margin-bottom: var(--space-sm); }
+.text-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.55; flex: 1; }
+.text-tags { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: var(--space-md); }
+.tag-chip {
+  padding: 3px 9px; border-radius: 999px; font-size: 0.72rem;
+  background: var(--bg-glass2); border: 1px solid var(--border); color: var(--text-muted);
+}
+.text-meta { margin-top: var(--space-md); font-size: 0.75rem; color: var(--text-dim); display: flex; gap: var(--space-sm); }
+
+.loading-center { display: flex; justify-content: center; padding: var(--space-2xl); }
+.no-results { display: flex; flex-direction: column; align-items: center; gap: var(--space-md);
+  padding: var(--space-2xl); color: var(--text-muted); text-align: center; }
