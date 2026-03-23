@@ -1,0 +1,48 @@
+.about-mission {
+  text-align: center; max-width: 740px; margin: 0 auto var(--space-2xl);
+}
+.about-mission .badge { margin-bottom: var(--space-lg); }
+.about-mission h2 { margin-bottom: var(--space-lg); }
+.about-mission p { color: var(--text-muted); font-size: 1rem; line-height: 1.75; margin-bottom: var(--space-md); }
+
+.about-section { margin-bottom: var(--space-2xl); }
+.about-section > h3 { font-size: 1.1rem; margin-bottom: var(--space-xl); }
+
+.corpus-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--space-md); }
+.corpus-card { }
+.corpus-emoji { font-size: 1.8rem; margin-bottom: var(--space-sm); }
+.corpus-card h4 { font-size: 0.95rem; margin-bottom: 8px; }
+.corpus-card ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.corpus-card li { font-size: 0.8rem; color: var(--text-muted); padding-left: 12px; position: relative; }
+.corpus-card li::before { content: '›'; position: absolute; left: 0; color: var(--primary); }
+
+.pipeline-steps { display: flex; flex-direction: column; gap: var(--space-md); }
+.pipeline-step {
+  display: flex; align-items: center; gap: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-glass2); border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+.step-num-lg {
+  font-size: 1.5rem; font-weight: 800; font-family: var(--font-display);
+  color: var(--primary); opacity: 0.4; flex-shrink: 0; width: 40px;
+}
+.pipeline-step strong { font-size: 0.9rem; display: block; margin-bottom: 2px; }
+.pipeline-step p { font-size: 0.8rem; color: var(--text-muted); }
+
+.stack-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--space-md); }
+.stack-card { display: flex; align-items: center; gap: var(--space-md); }
+.stack-card strong { display: block; font-size: 0.9rem; margin-bottom: 2px; }
+.stack-card p { font-size: 0.78rem; color: var(--text-muted); }
+
+.about-cta { text-align: center; padding: var(--space-xl); }
+.about-cta h3 { margin-bottom: var(--space-md); font-size: 1.2rem; }
+.about-cta p { color: var(--text-muted); margin-bottom: var(--space-lg); }
+.cta-badges { display: flex; align-items: center; justify-content: center; gap: var(--space-sm); flex-wrap: wrap; }
+
+@media (max-width: 768px) {
+  .corpus-grid, .stack-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .corpus-grid, .stack-grid { grid-template-columns: 1fr; }
+}
